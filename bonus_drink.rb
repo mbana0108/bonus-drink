@@ -12,7 +12,6 @@ def calculate_total_drinks(initial_drinks)
 end
 
 def main
-  loop do
     # ユーザーに購入する飲み物の本数を入力してもらう
     print "How many drinks? "
     num = gets.to_i
@@ -21,14 +20,6 @@ def main
     total_drinks = calculate_total_drinks(num)
 
     puts "Total drinks you can drink: #{total_drinks}\n\n"
-
-    # プログラムを続けるかどうかをユーザーに尋ねる
-    print "Continue? (y/n): "
-    state = gets.chomp.downcase
-
-    # "n"が入力されたらループを終了
-    break if state == "n"
-  end
 end
 
 main
