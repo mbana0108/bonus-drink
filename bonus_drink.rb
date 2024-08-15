@@ -21,7 +21,7 @@ def main
   # 飲める合計の本数を計算
   total_drinks = BonusDrink.total_count_for(num)
 
-  puts "Total drinks you can drink: #{total_drinks}\n\n"
+  puts "Total drinks: #{total_drinks}\n\n"
 end
 
 main if __FILE__ == $0
